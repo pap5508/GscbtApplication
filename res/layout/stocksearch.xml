@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back"
+	android:id="@+id/relativeLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="top">
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="@drawable/stock_search_title"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout1"
+		android:orientation="horizontal" android:layout_alignParentTop="true"
+		android:layout_alignParentLeft="true">
+		<Button android:id="@+id/stockdetail_home"
+			android:drawableLeft="@drawable/home" android:layout_height="wrap_content"
+			android:textColor="#ffffff" android:layout_marginBottom="5dip"
+			android:layout_weight="1" android:layout_width="0dp"
+			android:layout_gravity="left" android:layout_marginLeft="10dip"
+			android:background="@null"></Button>
+		<TextView android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="0dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView4" android:text=" "></TextView>
+		<Button android:id="@+id/stockdetail_back"
+			android:layout_marginRight="10dip" android:layout_height="wrap_content"
+			android:textColor="#ffffff" android:layout_weight="1"
+			android:layout_width="0dp" android:layout_marginTop="10dip"
+			android:drawableRight="@drawable/back_icon" android:background="@null"></Button>
+	</LinearLayout>
+	<TableLayout android:layout_width="wrap_content"
+		android:stretchColumns="*" android:id="@+id/stocktable"
+		android:layout_height="wrap_content" android:layout_below="@+id/linearLayout1"
+		android:layout_alignParentLeft="true" android:layout_marginTop="10dip">
+		<TableRow android:id="@+id/tableRow1_stockdetail"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<TextView android:textColor="#000000" android:gravity="center"
+				android:layout_weight="1" android:layout_width="0dp" android:text="ID"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:textSize="11dp" android:layout_marginLeft="2dp"></TextView>
+			<TextView android:textColor="#000000" android:gravity="center"
+				android:layout_weight="1" android:layout_width="0dp" android:text="BloodBank"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:textSize="11dp" android:layout_marginLeft="2dp"></TextView>
+			<TextView android:textColor="#000000" android:gravity="center"
+				android:layout_weight="1" android:layout_width="0dp" android:text="Bloodgrp"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:textSize="11dp" android:layout_marginLeft="2dp"></TextView>
+			<TextView android:textColor="#000000" android:gravity="center"
+				android:layout_weight="1" android:layout_width="0dp" android:text="Stock"
+				android:textStyle="bold" android:layout_height="wrap_content"
+				android:textSize="11dp" android:layout_marginLeft="2dp"></TextView>
+			<TextView android:textColor="#000000" android:gravity="center"
+				android:layout_weight="1" android:layout_width="0dp" android:text="Edit"
+				android:textStyle="bold" android:layout_height="fill_parent"
+				android:textSize="11dp" android:layout_marginLeft="2dp"></TextView>
+		</TableRow>
+	</TableLayout>
+	<ListView android:id="@+id/stocklist" android:layout_width="fill_parent"
+		android:layout_marginTop="5dp" android:layout_below="@+id/stocktable"
+		android:layout_height="fill_parent" android:layout_alignParentBottom="true"></ListView>
+
+</RelativeLayout>

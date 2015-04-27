@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/rl_stocklist"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2" android:layout_width="fill_parent"
+		android:baselineAligned="false">
+		<TextView android:id="@+id/text1" android:layout_width="0dp"
+			android:textColor="#000000" android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_marginLeft="2dp"
+			android:textStyle="bold" android:gravity="center" android:text="id"></TextView>
+		<TextView android:id="@+id/text2" android:layout_weight="1"
+			android:textColor="#000000" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_marginLeft="2dp"
+			android:textStyle="bold" android:gravity="center" android:text="fresh"></TextView>
+		<TextView android:id="@+id/text3" android:layout_weight="1"
+			android:textColor="#000000" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_marginLeft="2dp"
+			android:textStyle="bold" android:gravity="center" android:text="packetcell"></TextView>
+		<TextView android:id="@+id/text4" android:layout_weight="1"
+			android:textColor="#000000" android:layout_width="0dp"
+			android:layout_height="wrap_content" android:layout_marginLeft="2dp"
+			android:textStyle="bold" android:gravity="center" android:text="blood"></TextView>
+
+		<ImageButton android:layout_height="32px"
+			android:layout_width="32px" android:id="@+id/stock_edit" android:src="@drawable/edit"
+			android:background="@null" android:layout_gravity="center"
+			android:layout_marginLeft="1dip" android:layout_marginRight="2dip"></ImageButton>
+
+	</LinearLayout>
+</LinearLayout>

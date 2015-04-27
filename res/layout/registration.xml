@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back"
+	android:id="@+id/relativeLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:background="@drawable/registration_title"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent" android:orientation="horizontal">
+		<Button android:drawableLeft="@drawable/home"
+			android:background="@null" android:textColor="#ffffff" android:id="@+id/reg_home"
+			android:layout_height="wrap_content" android:layout_gravity="left"
+			android:layout_marginLeft="10dip" android:layout_marginBottom="5dip"
+			android:layout_weight="1" android:layout_width="0dp"></Button>
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+			android:textColor="#000000" android:layout_height="wrap_content"
+			android:id="@+id/textView4" android:text=" " android:layout_weight="1"
+			android:layout_width="0dp"></TextView>
+		<Button android:drawableRight="@drawable/back_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/donor_back"
+			android:layout_height="wrap_content" android:layout_width="0dp"
+			android:layout_marginRight="10dip" android:layout_marginTop="10dip"></Button>
+	</LinearLayout>
+
+	<LinearLayout android:background="@drawable/footer_title"
+		android:id="@+id/linearLayout2" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent">
+		<Button android:drawableTop="@drawable/ok_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/reg_submit" android:text="SUBMIT"
+			android:layout_height="wrap_content" android:layout_width="0dp"
+			android:layout_marginTop="10dip"></Button>
+		<Button android:drawableTop="@drawable/reset_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/reg_cancel" android:text="RESET"
+			android:layout_height="wrap_content" android:layout_width="0dp"
+			android:layout_marginTop="10dip"></Button>
+	</LinearLayout>
+	<ScrollView android:layout_height="wrap_content" android:id="@+id/scroll_reg"
+		android:layout_width="fill_parent" android:layout_below="@+id/linearLayout1"
+		android:layout_alignParentLeft="true" android:layout_above="@+id/linearLayout2">
+		<LinearLayout android:id="@+id/ll2_reg"
+			android:orientation="vertical" android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<LinearLayout android:id="@+id/ll16_reg"
+				android:layout_width="fill_parent" android:layout_height="wrap_content">
+				<TextView android:id="@+id/tv_utype" android:text="UserType"
+					android:textColor="#000000" android:layout_height="wrap_content"
+					android:layout_width="0dp" android:textStyle="bold"
+					android:layout_weight="1" android:layout_gravity="center"></TextView>
+				<EditText android:layout_height="40dp"
+					android:layout_width="0dp" android:id="@+id/reg_utype"
+					android:layout_weight="1" android:editable="false"></EditText>
+			</LinearLayout>
+			<LinearLayout android:id="@+id/ll3_reg"
+				android:orientation="vertical" android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+				<TextView android:text="Personal Information"
+					android:textColor="#000000" android:id="@+id/tv_personal"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textStyle="bold" android:textSize="16px"></TextView>
+				<LinearLayout android:id="@+id/ll4_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Username *" android:textColor="#000000"
+						android:id="@+id/tv_uname" android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<EditText android:layout_height="40dp"
+						android:layout_width="0dp" android:id="@+id/reg_uname"
+						android:layout_weight="1">
+						<requestFocus></requestFocus>
+					</EditText>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/ll5_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Password *" android:textColor="#000000"
+						android:id="@+id/tv_pwd" android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<EditText android:layout_height="40dp"
+						android:layout_width="0dp" android:id="@+id/reg_pwd"
+						android:layout_weight="1" android:inputType="textPassword"></EditText>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/ll6_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Confirm Password *" android:id="@+id/tv_cpwd"
+						android:layout_width="0dp" android:textColor="#000000"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<EditText android:layout_height="40dp"
+						android:layout_width="0dp" android:id="@+id/reg_cpwd"
+						android:layout_weight="1" android:inputType="textPassword"></EditText>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/ll7_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Date of Birth *" android:id="@+id/tv_dob"
+						android:layout_width="0dp" android:textColor="#000000"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<EditText android:layout_height="40dp"
+						android:layout_width="0dp" android:id="@+id/reg_dob"
+						android:layout_weight="1" android:inputType="date"></EditText>
+				</LinearLayout>
+				<LinearLayout android:id="@+id/ll8_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:id="@+id/tv_bg" android:textColor="#000000"
+						android:text="Blood Group *" android:layout_height="wrap_content"
+						android:layout_width="0dp" android:layout_weight="1"></TextView>
+					<Spinner android:id="@+id/reg_bgspinner"
+						android:layout_width="0dp" android:layout_weight="1"
+						android:layout_height="40dp"></Spinner>
+
+
+				</LinearLayout>
+
+				<LinearLayout android:id="@+id/ll8_reg_ve"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:id="@+id/tv_bg" android:textColor="#000000"
+						android:text="Blood Group Sign*" android:layout_height="wrap_content"
+						android:layout_width="0dp" android:layout_weight="1"></TextView>
+					<Spinner android:id="@+id/reg_bgspinner_ve"
+						android:layout_width="0dp" android:layout_weight="1"
+						android:layout_height="40dp"></Spinner>
+
+
+				</LinearLayout>
+
+
+			</LinearLayout>
+
+			<LinearLayout android:id="@+id/ll9_reg"
+				android:layout_marginTop="5dp" android:orientation="vertical"
+				android:layout_width="fill_parent" android:layout_height="fill_parent">
+				<TextView android:text="Contact Information"
+					android:textColor="#000000" android:id="@+id/tv_contact"
+					android:layout_width="wrap_content" android:layout_height="wrap_content"
+					android:textStyle="bold" android:textSize="16px"></TextView>
+
+				<LinearLayout android:id="@+id/ll10_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="E-mail Id" android:textColor="#000000"
+						android:id="@+id/tv_eid" android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<EditText android:layout_height="40dp"
+						android:layout_width="0dp" android:id="@+id/reg_eid"
+						android:layout_weight="1" android:inputType="textEmailAddress"></EditText>
+				</LinearLayout>
+
+				<LinearLayout android:id="@+id/ll11_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Phone No. *" android:textColor="#000000"
+						android:id="@+id/tv_ph" android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<EditText android:layout_height="40dp"
+						android:layout_width="0dp" android:id="@+id/reg_ph"
+						android:layout_weight="1" android:inputType="number"></EditText>
+				</LinearLayout>
+
+				<LinearLayout android:id="@+id/ll12_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="District" android:id="@+id/tv_city"
+						android:layout_width="0dp" android:textColor="#000000"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<Spinner android:id="@+id/reg_cityspinner"
+						android:layout_width="0dp" android:layout_weight="1"
+						android:layout_height="40dp"></Spinner>
+				</LinearLayout>
+
+
+				<LinearLayout android:id="@+id/ll14_reg"
+					android:layout_width="fill_parent" android:layout_height="wrap_content">
+					<TextView android:text="Zip Code" android:textColor="#000000"
+						android:id="@+id/tv_zip" android:layout_width="0dp"
+						android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+					<EditText android:layout_height="40dp"
+						android:layout_width="0dp" android:id="@+id/reg_zip"
+						android:layout_weight="1" android:inputType="number"></EditText>
+				</LinearLayout>
+			</LinearLayout>
+		</LinearLayout>
+
+	</ScrollView>
+</RelativeLayout>

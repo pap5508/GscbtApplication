@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back" android:id="@+id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:background="@drawable/donor_title" android:id="@+id/linearLayout1" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentLeft="true" android:layout_width="fill_parent" android:orientation="horizontal">
+        <Button android:drawableLeft="@drawable/home" android:background="@null" android:textColor="#ffffff"  android:id="@+id/search_home" android:layout_height="wrap_content" android:layout_gravity="left" android:layout_marginLeft="10dip" android:layout_marginBottom="5dip" android:layout_weight="1" android:layout_width="0dp"></Button>
+        <TextView android:textAppearance="?android:attr/textAppearanceMedium" android:layout_height="wrap_content" android:id="@+id/textView4" android:text=" " android:layout_weight="1" android:layout_width="0dp"></TextView>
+        <Button android:drawableRight="@drawable/back_icon" android:background="@null" android:textColor="#ffffff" android:layout_weight="1" android:id="@+id/donor_back"  android:layout_height="wrap_content" android:layout_width="0dp" android:layout_marginRight="10dip" android:layout_marginTop="10dip"></Button>
+    </LinearLayout>
+    <LinearLayout android:background="@drawable/footer_title" android:id="@+id/linearLayout2" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true" android:layout_width="fill_parent">
+        <Button android:drawableTop="@drawable/usersection_icon" android:background="@null" android:textColor="#ffffff" android:layout_weight="1" android:id="@+id/donor_reg" android:text="NEW USER" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_gravity="bottom"></Button>
+        <Button android:drawableTop="@drawable/usersection_icon" android:background="@null" android:textColor="#ffffff" android:layout_weight="1" android:id="@+id/donor_login" android:text="LOGIN" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_gravity="bottom"></Button>
+        <Button android:drawableTop="@drawable/search_icon" android:background="@null" android:textColor="#ffffff" android:layout_weight="1" android:id="@+id/donor_search" android:text="SEARCH" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_gravity="bottom"></Button>
+        <Button android:drawableTop="@drawable/contact_icon" android:background="@null" android:textColor="#ffffff" android:layout_weight="1" android:id="@+id/donor_event" android:text="EVENT" android:layout_height="wrap_content" android:layout_width="0dp" android:layout_gravity="bottom"></Button>
+    </LinearLayout>
+
+</RelativeLayout>

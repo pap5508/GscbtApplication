@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back"
+	android:id="@+id/relativeLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="top">
+	<LinearLayout android:layout_width="fill_parent"
+		android:background="@drawable/gscbt" android:layout_height="wrap_content"
+		android:id="@+id/linearLayout1" android:orientation="horizontal"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true">
+		<Button android:id="@+id/stockclick_home" android:drawableLeft="@drawable/home"
+			android:layout_height="wrap_content" android:textColor="#ffffff"
+			android:layout_marginBottom="5dip" android:layout_weight="1"
+			android:layout_width="0dp" android:layout_gravity="left"
+			android:layout_marginLeft="10dip" android:background="@null"></Button>
+		<TextView android:layout_height="wrap_content"
+			android:layout_weight="1" android:layout_width="0dp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView4" android:text=" "></TextView>
+		<Button android:id="@+id/user_back" android:layout_marginRight="10dip"
+			android:layout_height="wrap_content" android:textColor="#ffffff"
+			android:layout_weight="1" android:layout_width="0dp"
+			android:layout_marginTop="10dip" android:drawableRight="@drawable/back_icon"
+			android:background="@null"></Button>
+	</LinearLayout>
+
+	<LinearLayout android:background="@drawable/footer_title"
+		android:id="@+id/linearLayout2" android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent">
+		<Button android:drawableTop="@drawable/donor_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/user_donor" android:text="DONOR"
+			android:layout_height="wrap_content" android:layout_width="0dp"
+			android:layout_gravity="bottom"></Button>
+		<Button android:drawableTop="@drawable/patien_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/user_patient"
+			android:text="PATIENT" android:layout_height="wrap_content"
+			android:layout_width="0dp" android:layout_gravity="bottom"></Button>
+		<Button android:drawableTop="@drawable/hospital_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/user_bb" android:text="BLOODBANK"
+			android:layout_height="wrap_content" android:layout_width="0dp"
+			android:layout_gravity="bottom"></Button>
+	</LinearLayout>
+
+
+</RelativeLayout>

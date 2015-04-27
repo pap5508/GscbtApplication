@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="com.Android.GscbtFinal" android:versionCode="1"
+	android:versionName="1.0">
+
+	<uses-sdk android:minSdkVersion="4" />
+	<uses-sdk android:maxSdkVersion="11" />
+
+
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.SEND_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+
+	<application android:icon="@drawable/redcross"
+		android:label="@string/app_name">
+		<activity android:name=".GSCBTFINALActivity" android:label="@string/app_name"
+			android:screenOrientation="portrait">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Donor" android:screenOrientation="portrait"></activity>
+		<activity android:name=".Patient" android:screenOrientation="portrait"></activity>
+		<activity android:name=".BloodBank"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".ContactUs"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".Registration"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".BBRegistration"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".Login" android:screenOrientation="portrait"></activity>
+		<activity android:name=".Search" android:screenOrientation="portrait"></activity>
+		<activity android:name=".BBProfile"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".BloodBankDetail"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".BBRegistration"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".DonorDetail"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".Event" android:screenOrientation="portrait"></activity>
+		<activity android:name=".Inquiry" android:screenOrientation="portrait"></activity>
+		<activity android:name=".MonthlyReport"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".PatientDetail"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".Profile" android:screenOrientation="portrait"></activity>
+		<activity android:name=".Search" android:screenOrientation="portrait"></activity>
+		<activity android:name=".SearchBB" android:screenOrientation="portrait"></activity>
+		<activity android:name=".SearchDonor"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".SearchDonorClick"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".StockUpdate"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".EventClick"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".StockSearch"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".StockEditClick"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".CurrentLocation"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".SearchDonorClickDetail"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".Sms" android:screenOrientation="portrait"></activity>
+		<activity android:name=".SerchafterLogin"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".SearchList"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".SearchDetailClick"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".User" android:screenOrientation="portrait"></activity>
+		<activity android:name=".SearchLgn"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".AboutUs" android:screenOrientation="portrait"></activity>
+		<uses-library android:name="com.google.android.maps"></uses-library>
+
+
+
+	</application>
+</manifest>

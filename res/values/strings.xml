@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, GSCBTFINALActivity!</string>
+    <string name="app_name">GSCBTFINAL</string>
+    
+    <string-array name="City">
+		<item>Ahmedabad</item>
+		<item>Anand</item>
+		<item>Banashkatha</item>
+		<item>Bharuch</item>
+		<item>Bhavnagar</item>
+		<item>Dahod</item>
+		<item>Dang</item>
+		<item>Gandhinagar</item>
+		<item>Ghodhara</item>		
+		<item>Jamnagar</item>
+		<item>Junaghadh</item>
+		<item>Kuccha</item>
+		<item>Kheda</item>		
+		<item>Mehsana</item>
+		<item>Navsari</item>
+		<item>Patan</item>
+		<item>Porbandar</item>
+		<item>Rajkot</item>
+		<item>Sabarkantha</item>
+		<item>Surat</item>
+		<item>Surendranagar</item>
+		<item>Vadodara</item>
+		<item>Valsad</item>
+	</string-array>
+	
+	 <string-array name="BloodGroup">
+		<item>A +ve</item>
+		<item>A -ve</item>
+		<item>B +ve</item>
+		<item>B -ve</item>
+		<item>O +ve</item>
+		<item>O -ve</item>
+		<item>AB +ve</item>
+		<item>AB -ve</item>
+		</string-array>
+	
+	 <string-array name="BG">
+		<item>A</item>
+		<item>B</item>
+		<item>O</item>
+		<item>AB</item>
+		</string-array>
+		
+		 <string-array name="Rh">
+		
+		<item>+ve</item>
+		<item>-ve</item>
+		</string-array>
+		
+	 <string-array name="Naco">
+		
+		<item>Yes</item>
+		<item>No</item>
+		</string-array>
+		
+	
+	 <string-array name="Category">
+		<item>Medical Collage Teaching Hospital</item>
+		<item>District Hospital</item>
+		<item>SubDistrict Hospital</item>
+		<item>Others</item>
+		
+	</string-array>
+	
+	 <string-array name="BloodBank">
+		<item>Civil</item>
+		<item>Saal</item>
+		<item>Apollo</item>
+		<item>Krishna</item>
+		<item>May Flower</item>
+		<item>Keizen</item>
+		<item>VS</item>
+		<item>HiTech</item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+		<item></item>
+	</string-array>
+	
+		
+</resources>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back"
+	android:id="@+id/relativeLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android"
+	android:gravity="center">
+	<LinearLayout android:background="@drawable/search_title"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent" android:orientation="horizontal">
+		<Button android:drawableLeft="@drawable/home"
+			android:background="@null" android:textColor="#ffffff" android:id="@+id/searchbb_home"
+			android:layout_height="wrap_content" android:layout_gravity="left"
+			android:layout_marginLeft="10dip" android:layout_marginBottom="5dip"
+			android:layout_weight="1" android:layout_width="0dp"></Button>
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_height="wrap_content" android:id="@+id/textView4"
+			android:text=" " android:layout_weight="1" android:layout_width="0dp"></TextView>
+		<Button android:drawableRight="@drawable/back_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/searchbb_back"
+			android:layout_height="wrap_content" android:layout_width="0dp"
+			android:layout_marginRight="10dip" android:layout_marginTop="10dip"></Button>
+	</LinearLayout>
+	<LinearLayout android:background="@drawable/footer_title"
+		android:layout_height="wrap_content" android:id="@+id/linearLayout2"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent"
+		android:orientation="vertical">
+		<Button android:drawableTop="@drawable/exit_icon"
+			android:background="@null" android:textColor="#ffffff" android:id="@+id/searchbb_logout"
+			android:layout_height="wrap_content" android:layout_width="wrap_content"
+			android:layout_gravity="center" android:text="LOGOUT"
+			android:layout_marginTop="10dip"></Button>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/ll1_searchbb"
+		android:layout_below="@+id/linearLayout1"
+		android:layout_alignParentLeft="true">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:layout_width="0dp" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/tv_searchbbwelcome" android:text="Welcome"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:layout_width="0dp" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/tv_searchbbuname"></TextView>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/ll9_searchbb"
+		android:layout_below="@+id/ll1_searchbb"
+		android:layout_alignParentLeft="true">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:layout_width="0dp" android:id="@+id/tv_citysearchbb"
+			android:text="City" android:layout_gravity="center"></TextView>
+		<Spinner android:layout_height="40dp" android:layout_weight="1"
+			android:id="@+id/searchbb_spinner" android:layout_width="0dp"
+			android:layout_gravity="center"></Spinner>
+		<ImageButton android:src="@drawable/search_icon"
+			android:background="@null" android:id="@+id/searchbb_searchbb"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_gravity="center"></ImageButton>
+	</LinearLayout>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout3" android:layout_below="@+id/ll9_searchbb"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/bb" android:text="     BloodBank" android:layout_weight="1"
+			android:layout_width="wrap_content" android:layout_gravity="center"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/bbno" android:text="     Contact No."
+			android:layout_weight="1" android:layout_width="wrap_content"></TextView>
+	</LinearLayout>
+	<ListView android:id="@+id/bbsearch_lv" android:textColor="#000000"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		android:layout_below="@+id/linearLayout3"
+		android:layout_alignParentLeft="true" android:layout_above="@+id/linearLayout2"></ListView>
+
+</RelativeLayout>

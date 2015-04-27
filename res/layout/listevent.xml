@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/linearLayout1" android:layout_height="fill_parent"
+	android:layout_width="fill_parent" android:orientation="vertical">
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content" android:text="EventTitle"
+			android:id="@+id/text1" android:layout_width="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"></TextView>
+		<ImageButton android:layout_height="32px"
+			android:layout_width="32px" android:id="@+id/event_map" android:src="@drawable/map"
+			android:background="@null" android:layout_marginLeft="10dip"
+			android:layout_marginRight="10dip" android:layout_gravity="center"></ImageButton>
+		<ImageButton android:layout_height="32px"
+			android:layout_width="32px" android:id="@+id/event_detail"
+			android:src="@drawable/info" android:background="@null"
+			android:layout_marginLeft="10dip" android:layout_marginRight="10dip"
+			android:layout_gravity="center"></ImageButton>
+	</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/back"
+	android:id="@+id/relativeLayout1" android:layout_width="fill_parent"
+	android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+	<LinearLayout android:background="@drawable/inquiry_title"
+		android:id="@+id/linearLayout1" android:layout_height="wrap_content"
+		android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+		android:layout_width="fill_parent" android:orientation="horizontal">
+		<Button android:drawableLeft="@drawable/home"
+			android:background="@null" android:textColor="#ffffff" android:id="@+id/inquiry_home"
+			android:layout_height="wrap_content" android:layout_gravity="left"
+			android:layout_marginLeft="10dip" android:layout_marginBottom="5dip"
+			android:layout_weight="1" android:layout_width="0dp"></Button>
+		<TextView android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_height="wrap_content" android:id="@+id/textView4"
+			android:text=" " android:layout_weight="1" android:layout_width="0dp"></TextView>
+		<Button android:drawableRight="@drawable/back_icon"
+			android:background="@null" android:textColor="#ffffff"
+			android:layout_weight="1" android:id="@+id/inquiry_back"
+			android:layout_height="wrap_content" android:layout_width="0dp"
+			android:layout_marginRight="10dip" android:layout_marginTop="10dip"></Button>
+	</LinearLayout>
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/tableRow2"
+		android:layout_below="@+id/linearLayout1"
+		android:layout_alignParentLeft="true" android:layout_marginTop="10dip">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="0dp" android:id="@+id/textView1"
+			android:layout_gravity="center" android:text="CITY :"></TextView>
+		<Spinner android:layout_width="0dp" android:id="@+id/inquiry_spinner"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:layout_weight="1"></Spinner>
+	</TableRow>
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/tableRow1"
+		android:layout_below="@+id/tableRow2" android:layout_alignParentLeft="true">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="0dp" android:id="@+id/textView1"
+			android:layout_gravity="center" android:text="BLOOD BANK :"></TextView>
+		<Spinner android:layout_width="0dp" android:id="@+id/inquiry_spinnerbbname"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:layout_weight="1"></Spinner>
+	</TableRow>
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/tableRow3"
+		android:layout_below="@+id/tableRow1" android:layout_alignParentLeft="true">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:layout_width="0dp" android:id="@+id/textView1"
+			android:layout_gravity="center" android:text="BLOOD GORUP"></TextView>
+		<Spinner android:layout_width="0dp" android:id="@+id/inquiry_spinnerbg"
+			android:layout_height="wrap_content" android:layout_gravity="center"
+			android:layout_weight="1"></Spinner>
+	</TableRow>
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/tableRow4"
+		android:layout_below="@+id/tableRow3" android:layout_alignParentLeft="true">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:layout_weight="1"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:layout_width="0dp" android:id="@+id/textView2" android:text=" "></TextView>
+		<Button android:id="@+id/inquiry_search" android:layout_height="wrap_content"
+			android:layout_weight="1" android:drawableRight="@drawable/search_icon"
+			android:layout_width="0dp" android:background="@null"></Button>
+	</TableRow>
+	<LinearLayout android:layout_height="wrap_content"
+		android:id="@+id/linearLayout2" android:layout_below="@+id/tableRow4"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent">
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView3" android:text="Bloodbank"
+			android:layout_weight="1" android:layout_width="0dp"></TextView>
+		<TextView android:textAppearance="?android:attr/textAppearanceSmall"
+			android:textColor="#000000" android:id="@+id/textView5"
+			android:layout_height="wrap_content" android:text="Stock"
+			android:layout_weight="1" android:layout_width="0dp"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView6" android:text="Map" android:layout_weight="1"
+			android:layout_width="0dp"></TextView>
+		<TextView android:layout_height="wrap_content"
+			android:textColor="#000000" android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView7" android:text="Detail"
+			android:layout_weight="1" android:layout_width="0dp"></TextView>
+	</LinearLayout>
+	<ScrollView android:id="@+id/scrollView1"
+		android:layout_height="wrap_content" android:layout_below="@+id/linearLayout2"
+		android:layout_alignParentLeft="true" android:layout_width="fill_parent">
+		<LinearLayout android:layout_height="fill_parent"
+			android:layout_width="fill_parent" android:id="@+id/linearLayout3">
+			<ListView android:id="@+id/listView1_inq"
+				android:layout_width="fill_parent" android:layout_marginTop="245dp"
+				android:layout_height="fill_parent" android:layout_marginBottom="70dp"></ListView>
+		</LinearLayout>
+	</ScrollView>
+</RelativeLayout>
